@@ -1,0 +1,8 @@
+<div>
+    <h1>{{user.username}}</h1>
+    <p>Enabled {{user.enabled | checkmark}}</p>
+    <p>Expired {{user.expired | checkmark}}</p>
+    <p class="card-text"><a href="mailto:{{user.email}}">{{user.email}}</a></p>
+    <input type="button" class="btn btn-primary left" ng-click="vm.edit(user)" value="Edit"/>
+    <input type="button" class="btn btn-danger right" ng-click="vm.deleteUser(user)" value="Delete"/>
+</div>

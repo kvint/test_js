@@ -1,0 +1,12 @@
+<div class="left left-col">
+    <a href="#/add">Add new user</a>
+    <div>Filter <input type="text" ng-model="search.username" /></div>
+    <div class="row">
+        <div class="col-sm-6" ng-repeat="user in data | orderBy:'username' | filter:search">
+            <user-card user="user" on-save="vm.saveUser(user)" on-delete="vm.deleteUser(user)" on-select="vm.selectUser(user)"></user-card>
+        </div>
+    </div>
+</div>
+<div class="pull-right right-col">
+    <div ui-view></div>
+</div>

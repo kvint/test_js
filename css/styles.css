@@ -1,0 +1,40 @@
+html, body {
+	margin: 0;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.left-col {
+	width: 66.6%;
+}
+.right-col {
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 33.3%;
+	background-color: #eee;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto 0;
+}
+.usercard {
+	padding-left: 10px;
+}
+.usercard:hover {
+	background-color: #eee;
+}
+.user-form {
+
+}
+.user-form input[type="text"],input[type="email"]{
+	width: 100%;
+}
+.user-form .ng-invalid {
+	border: 1px solid #f00;
+}
+.user-form .field-error {
+	font-size: 10px;
+	color: #f20;
+}

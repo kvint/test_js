@@ -1,0 +1,19 @@
+<div class="card card-block">
+    <form name="editUserForm" class="user-form" novalidate>
+        <h1 class="card-title">
+            <input type="text" name="name" ng-model="editingUser.username" pattern="(?!\d)[A-z0-9._\-]+" minlength="4" maxlength="20" required/>
+        </h1>
+        <div class="field-error" ng-show="editUserForm.name.$error.pattern">Invalid user name</div>
+        <div class="field-error" ng-show="editUserForm.name.$error.required">User name cannot be blank</div>
+        <div class="field-error" ng-show="editUserForm.name.$error.minlength">User name cannot be less that 4 characters</div>
+        <div class="field-error" ng-show="editUserForm.name.$error.maxlength">User name cannot be more that 20 characters</div>
+
+        <p>Enabled <input type="checkbox" ng-model="editingUser.enabled" /></p>
+        <p>Expired <input type="checkbox" ng-model="editingUser.expired" /></p>
+        <p class="card-text"><input type="email" name="email" ng-model="editingUser.email" required  /></p>
+        <div class="field-error" ng-show="editUserForm.email.$error.required">User email cannot be blank</div>
+        <div class="field-error" ng-show="editUserForm.email.$error.email">Email is invalid</div>
+        <button type="submit" class="btn btn btn-primary left" ng-click="vm.save(editingUser)">Save</button>
+        <button type="button" class="btn btn-default right" ng-click="vm.cancel()" ng-show="enabledCancel">Cancel</button>
+    </form>
+</div>
