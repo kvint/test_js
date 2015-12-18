@@ -1,10 +1,26 @@
 {
-  "name": "JS Test",
+  "name": "js_test",
   "dependencies": {
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-uglify": "^0.11.0"
   },
   "devDependencies": {
     "grunt-ng-annotate": "^1.0.1"
-  }
+  },
+  "version": "1.0.0",
+  "description": "Simple CRUD application",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kvint/test_js.git"
+  },
+  "author": "Alexander Slavschik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvint/test_js/issues"
+  },
+  "homepage": "https://github.com/kvint/test_js#readme"
 }
