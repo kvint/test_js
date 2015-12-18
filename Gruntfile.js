@@ -8,12 +8,6 @@ grunt.initConfig({
 			dest: 'dist/app.js'
 		}
 	},
-	/*concat:{
-		dist:{
-			src: ["js/services.js", "js/directives.js", "js/controllers.js", "js/filters.js", "js/app.js"],
-			dest:'dist/app.js'
-		}
-	},*/
 	ngAnnotate: {
 		options: {
 
@@ -27,7 +21,6 @@ grunt.initConfig({
 });
 
 grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-ng-annotate');
 
 grunt.registerTask('default', ['ngAnnotate', 'uglify']);

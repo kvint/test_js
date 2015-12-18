@@ -1,6 +1,6 @@
 .DS_Store
 .idea/
-.dist/
 *.iml
+dist/
 bower_components/
 node_modules/
